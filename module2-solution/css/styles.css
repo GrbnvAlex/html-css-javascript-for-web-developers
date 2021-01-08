@@ -1,0 +1,80 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-style: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+h1 {
+  font-size: 175%;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  text-align: center;
+}
+h2 {
+  border: 1px solid black;
+  float: right;
+  font-size: 125%;
+  margin: -1px -1px 10px 0px;
+  padding: 5px 40px;
+  text-align: right;
+}
+div {
+  margin: 1%;
+  position: relative;
+}
+section {
+  background-color: #AAAAAA;
+  border: 1px solid black;
+  float: left;
+  height: 250px;
+  margin: 1%;
+  overflow: hidden;
+  position: relative;
+}
+p {
+  clear: right;
+  color: black;
+  margin: 0px 20px;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 98%;
+}
+
+#color1 {
+  background-color: pink;
+  color: black;
+}
+#color2 {
+  background-color: red;
+  color: white;
+}
+#color3 {
+  background-color: yellow;
+  color: black;
+}
+
+/********** Desktop **********/
+@media (min-width: 992px) {
+  .desktop {
+    width: 31%;
+  }
+}
+
+/********** Tablet **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .tablet {
+    width: 48%;
+  }
+  #wide_tablet {
+    width: 98%;
+  }
+}
+
+/********** Phone **********/
+@media (max-width: 767px) {
+  .tablet {
+    width: 98%;
+  }
+}
